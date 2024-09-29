@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- For navbar code -->
+    <div class="container">
+        <!--whole navbar-->
+        <nav class="fixed top-0 left-0 right-0 z-50  flex items-center mt-5 ">
+            <!--to fix navbar and align item vertically center for mt-5-->
+            <!-- one div container in navbar -->
+            <div class="container mx-auto flex justify-between items-center"> <!--to devide li in ul -->
+                <!-- for adding elements in container -->
+                <!-- For logo -->
+                <img src="logo30days.png" alt="This is my logo" class=" my-0 h-10 w-20 mx-6 ">
+                <!-- for navbar list -->
+                <div class="bg-gray-200 rounded-3xl p-2 mx-6">
+                    <ul class="flex space-x-4 text-sm">
+                        <!-- flex is for acquire particular space not all space like block-->
+                        <li><a href="#intro" class="hover:text-gray-600">Intro</a></li>
+                        <li><a href="#review" class="hover:text-gray-600">Reviews</a></li>
+                        <li><a href="#pricing" class="hover:text-gray-600">Pricing</a></li>
+                        <li><a href="#features" class="hover:text-gray-600">Features</a></li>
+                        <li><a href="#Testimonials" class="hover:text-gray-600 ">Testimonials</a></li>
+
+                    </ul>
+                </div>
+                <!-- for navbar right side button -->
+                <button type="submit" class="bg-black rounded-3xl p-2 text-sm   text-white mx-6 justify-end ">Join
+                    Community</button>
+            </div>
+        </nav>
+    </div>
+
+    <!-- For Introduction section -->
+
+    <section id="intro" class=" active h-auto container mx-auto mt-20 py-20">
+        <!---work like container  row -->
+        <!-- one div container for Introduction section  -->
+        <div class="flex  flex-row ">
+            <!-- for adding half part of page -->
+            <div class="w-1/2 p-4">
+                <h1 class=" text-6xl font-bold mb-4"><span class="text-green-500   space-x-4 items-center mt-5">ATTEND
+                        LIVE</span><br>CLASSES EVERY <br>WEEK</h1>
+                <h6 class="mb-8">Join founders, freelancers, designers, FAANG engineers, indie hackers, and <br> more in
+                    our 24/7WhatsApp Group for less than a cup of coffee. </h6>
+                <button type="submit"
+                    class="text-sm    bg-green-500 rounded-3xl px-6  py-2 text-white mx-0 justify-start ">Join
+                    24/7WhatsApp $5/month</button>
+            </div>
+            <!-- for another half part of page -->
+            <img src="Advertising.webp" alt="This is advertising"
+                class="w-1/2 flex items-center justify-center  h-[80vh] p-4">
+        </div>
+    </section>
+
+    <!-- FOR REVIEW  section code -->
+
+    <section id="review" class="h-screen mt-10 py-10">
+        <!-- Take container div tag for content  which full space horizontally-->
+        <div class="mt-10 ">
+            <ul class="flex justify-between">
+                <li><i class="fa-solid fa-book-open mx-2 " style="color: #03d395;"></i><span class="font-semibold">5+
+                        Guide for Free</span></li>
+                <li><i class="fa-solid fa-graduation-cap mx-2" style="color: #03d395;"></i><span
+                        class="font-semibold">Exclusive Courses & Projects</span> </li>
+                <li><i class="fa-brands fa-whatsapp mx-2" style="color: #03d395;"></i></i><span
+                        class="font-semibold">24/7 WhatsApp Support Group</span></li>
+                <li><i class="fa-solid fa-person mx-2" style="color: #07c559;"></i><span class="font-semibold">1:1 Free
+                        Session</span></li>
+            </ul>
+        </div>
+
+        <!-- Below that another div tag in this section which include reviews of people -->
+        <div class="container mx-auto mt-10">
+            <!-- for heading -->
+            <h2 class="text-3xl text-center font-bold mb-10">Reviews</h2>
+            <!-- take another div tag which contain multiple div  take card for add reviews -->
+            <div class="flex justify-center space-x-8">
+                <!-- Card 1 -->
+                <div class="bg-white  p-4 text-center max-w-xs">
+                    <img src="person1.webp" alt="Team Member 1" class="rounded-full h-24 w-24 mx-auto mb-4">
+                    <h3 class="text-xl font-semibold">John Doe</h3>
+                    <p class="text-gray-600">"This Community has been a game-changer for my career. The exclusive
+                        courses and personalized guidance from expert mentors have helped me take my coding skills to
+                        the next level."</p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-white p-4 text-center max-w-xs">
+                    <img src="person1.webp" alt="Team Member 2" class="rounded-full h-24 w-24 mx-auto mb-4">
+                    <h3 class="text-xl font-semibold">Jane Smith</h3>
+                    <p class="text-gray-600">"The exclusive courses and bi-weekly live sessions have been incredibly
+                        insightful, and collaborating on open-source projects ha been a great way to build my portfolio.
+                        I highly recommend this community."</p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-white  p-4 text-center max-w-xs">
+                    <img src="person1.webp" alt="Team Member 3" class="rounded-full h-24 w-24 mx-auto mb-4">
+                    <h3 class="text-xl font-semibold">Alex Johnson</h3>
+                    <p class="text-gray-600">"Joining this community was one of the best decisions i've made for my
+                        career. The 24/7 WhatsApp group has been an incredible resource for networking and
+                        collaboration. I highly recommend this community"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="h-screen mt-20 py-20  min-h-screen bg-gray-100">
+        <!-- Pricing Section it only include heading part  -->
+        <div class="text-center flex-row">
+            <h2 class="text-4xl font-bold">SIMPLE NO-TRICKS PRICING</h2>
+            <p class="text-gray-500 mt-2">Everything you need to grow 10x for less than a coffee.</p>
+        </div>
+
+        <div
+            class=" container flex flex-row items-center justify-center  hover:shadow-xl rounded-xl shadow-lg mt-2  mx-auto max-w-2xl border-2  bg-white">
+
+
+            <!-- Pricing Box -->
+            <div class="mt-8 float-left w-1/2 mx-auto bg-white p-8  max-w-md mx-auto">
+                <h3 class="text-xl font-semibold">Premium Elite Subscription</h3>
+                <p class="text-gray-500 mt-2">
+                    Join founders, freelancers, designers, FAANG engineers, indie hackers, and more in our 24/7 WhatsApp
+                    Group for less than a cup of coffee.
+                </p>
+                <!-- What's included section -->
+                <div class="mt-4">
+                    <h4 class="font-semibold text-green-500">What's Included</h4>
+                    <ul class="mt-2 space-y-4 flex flex-wrap">
+                        <li class="flex items-center w-1/2  ">
+                            <i class="fa-solid fa-check" style="color: #0abb07;"></i>
+                            <span class="ml-2 text-sm">Expert Mentors</span>
+                        </li>
+                        <li class="flex items-center w-1/2">
+                            <i class="fa-solid fa-check" style="color: #0abb07;"></i>
+                            <span class="ml-2 text-sm">Networking & Collaboration</span>
+                        </li>
+                        <li class="flex items-center w-1/2">
+                            <i class="fa-solid fa-check" style="color: #0abb07;"></i>
+                            <span class="ml-2 text-sm">Exclusive Courses</span>
+                        </li>
+                        <li class="flex items-center w-1/2">
+                            <i class="fa-solid fa-check" style="color: #0abb07;"></i>
+                            <span class="ml-2 text-sm">Career Guidance</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-2  float-right w-1/2 mx-auto bg-gray-200 p-14 my-2   rounded-lg shadow-lg  mx-auto">
+                <h6 class="mt-2">Less than a cup of coffee</h6>
+                <!-- Pricing Details -->
+                <div class="mt-8  text-center ">
+                    <div>
+                        <span class="text-5xl font-bold">$5</span>
+                        <span class="text-gray-500  text-3xl line-through">$1000</span>
+                    </div>
+                    <button
+                        class="bg-green-500 text-white px-4 py-2  mt-6 rounded-full font-semibold hover:bg-green-600">Join
+                        Community</button>
+                </div>
+
+                <!-- Active Members -->
+                <div class="flex items-center mt-4">
+                    <img class="w-8 h-8 rounded-full" src="person1.webp" alt="Avatar 1">
+                    <img class="w-8 h-8 rounded-full -ml-2" src="person1.webp" alt="Avatar 2">
+                    <img class="w-8 h-8 rounded-full -ml-2" src="person1.webp" alt="Avatar 3">
+                    <span class="ml-4 text-gray-500 text-sm">100+ Active Members</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="h-screen mt-20 py-20">
+        <div class="container mx-auto px-4 py-8">
+            <h1 class="text-4xl font-bold  mb-4 text-center">Everything you need in one place</h1>
+            <p class="text-lg text-gray-700 text-center">Unleashing your digital potential for lasting success</p>
+
+            <div class="flex justify-center space-x-8">
+                <!-- Card 1 -->
+                <div class="bg-white  p-4 text-center max-w-xs">
+                    <img src="mentor.png" alt="Team Member 1" class="rounded-full h-24 w-24 mx-auto mb-4">
+                    <h3 class="text-xl font-semibold">EXPERT MENTORS</h3>
+                    <p class="text-gray-600">"Get personalized guidance from expert mentors to take your coding skills
+                        to the next level. "</p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-white  p-4 text-center max-w-xs">
+                    <img src="shake-hands.avif" alt="Team Member 2" class="rounded-full h-24 w-24 mx-auto mb-4">
+                    <h3 class="text-xl font-semibold">NETWORKING</h3>
+                    <p class="text-gray-600">"Connect with like-minded coders from around the world and collaborate on
+                        exciting projects"</p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-white  p-4 text-center max-w-xs">
+                    <img src="courses.png" alt="Team Member 3" class="rounded-full h-24 w-24 mx-auto mb-4">
+                    <h3 class="text-xl font-semibold">COURSES</h3>
+                    <p class="text-gray-600">"Exclusivecourse in Full Stack, AI, Blockchain, and more to help you stay
+                        ahead of the curve." </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="Testimonials" class="h-screen mt-10 py-10">
+        <!-- Take container div tag for content  which full space horizontally-->
+        <div class="mt-10 ">
+            <ul class="flex justify-between">
+                <li><i class="fa-solid fa-book-open mx-2 " style="color: #03d395;"></i><span class="font-semibold">
+                        Adobe</span></li>
+                <li><i class="fa-brands fa-airbnb"></i><span
+                        class="font-semibold">airbnb</span> </li>
+                <li><i class="fa-brands fa-figma"></i><span
+                        class="font-semibold">Figma</span></li>
+                <li>
+                    <p style="display:flex "><img src="framer.png" alt="This is a framer image" class=" w-5 h-5">
+                        Framer
+                    </p>
+                </li>
+                <li><i class="fa-sharp fa-solid fa-g" style="color: #f10404;"></i><span class="font-semibold">
+                        Google</span></li>
+                <li><i class="fa-brands fa-dropbox"></i></i><span class="font-semibold">
+                        Dropbox</span></li>
+            </ul>
+        </div>
+        <div class="flex  flex-row ">
+            <!-- for adding half part of page -->
+            <div class="w-1/2 p-4">
+                <h1 class=" text-4xl font-bold mt-2 mb-2"><span class="text-black   space-x-4 items-center mt-5">GAIN A
+                        COMPETITIVE EDGE IN JOB MARKET</h1>
+                <h6 class="mb-8">Join founders, freelancers, designers, FAANG engineers, indie hackers, and more in
+                    our 24/7WhatsApp Group for less than a cup of coffee. </h6>
+                <h5 class="text-green-700 mb-4">WHAT YOU'LL GET</h5>
+                <ul class="flex flex-col ">
+                    <li><i class="fa-solid fa-book-open mx-2 mb-2 " style="color: #03d395;"></i><span
+                            class="font-semibold">
+                            Comprehensive guides, proects, & courses</span></li>
+                    <li><i class="fa-solid fa-graduation-cap mx-2 mb-2" style="color: #03d395;"></i><span
+                            class="font-semibold">Exclusive job + internship posting</span> </li>
+                    <li><i class="fa-solid fa-person mx-2" style="color: #03d395;"></i><span class="font-semibold">1:1
+                            Career guidance & mentorship</span></li>
+                </ul>
+            </div>
+            <!-- for another half part of page -->
+            <img src="sucess.webp" alt="This is advertising"
+                class="w-1/2 flex items-center justify-center  h-[60vh] p-4">
+        </div>
+    </section>
+
+    <footer class="bg-white text-white py-0">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="logo30days.png" alt="Your Logo" class="w-24  h-15 mr-4">
+                <p class="text-md  mx-0 text-black font-bold">Days Coding</p>
+            </div>
+            <div class="text-center text-black">
+                <p>2024 @ All Rights Reserved</p>
+            </div>
+            <div class="flex items-center">
+                <a href="#" class="mr-4 text-black">
+                    <i class="fab fa-facebook-f  text-2xl style-black"></i>
+                </a>
+                <a href="#" class="mr-4 text-black">
+                    <i class="fab fa-twitter text-2xl"></i>
+                </a>
+                <a href="#" class="mr-4 text-black">
+                    <i class="fab fa-instagram text-2xl"></i>
+                </a>
+                <a href="#" class="mr-4 text-black">
+                    <i class="fab fa-linkedin-in text-2xl"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
